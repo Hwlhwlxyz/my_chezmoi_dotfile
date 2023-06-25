@@ -1,0 +1,5 @@
+"source C:\Program Files (x86)\Vim\vim-config\main.vim
+
+let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+exec 'source' s:path . '/vim-config/main.vim'
+

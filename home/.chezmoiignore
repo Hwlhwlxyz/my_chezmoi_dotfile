@@ -1,0 +1,8 @@
+{{ if ne .chezmoi.os "windows" }}
+home/_vimrc
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" }}
+/run_onchange_tmux.sh
+*tmux*
+{{ end }}
