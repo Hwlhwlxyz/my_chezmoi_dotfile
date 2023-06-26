@@ -1,8 +1,7 @@
 {{ if ne .chezmoi.os "windows" }}
-home/_vimrc
+_vimrc
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}
-/run_onchange_tmux.sh
-*tmux*
+tmux.sh
 {{ end }}
